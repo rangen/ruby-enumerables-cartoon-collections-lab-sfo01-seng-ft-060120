@@ -13,6 +13,6 @@ end
 def find_the_cheese(words)
   cheese_types = ["cheddar", "gouda", "camembert"]
 
-  words.each_with_index {|word, index| return word if cheese_types.include?(word)}
+  words.each {|word| return word if cheese_types.include?(word)}
   return nil
 end
