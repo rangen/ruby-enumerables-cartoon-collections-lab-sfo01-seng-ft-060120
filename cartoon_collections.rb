@@ -14,5 +14,5 @@ def find_the_cheese(words)
   cheese_types = ["cheddar", "gouda", "camembert"]
 
   words.each_with_index {|word, index| return word if cheese_types.include?(word)}
-  return false
+  return nil
 end
